@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="org.iiui.navigation.ui.MyBookings.HomeFragment"
+        android:label="@string/my_profile"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="org.iiui.navigation.ui.MyProfile.GalleryFragment"
+        android:label="@string/my_bookings"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="org.iiui.navigation.ui.ContactUs.SlideshowFragment"
+        android:label="@string/contact_us"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/setttingFragment"
+        android:name="org.iiui.navigation.Fragments.SetttingFragment"
+        android:label="fragment_settting"
+        tools:layout="@layout/fragment_settting" />
+</navigation>
